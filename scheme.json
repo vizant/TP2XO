@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "gameBoard": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "fileName": {
+      "type": "string"
+    },
+    "player_x": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "playerSymbol": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "playerSymbol"
+      ]
+    },
+    "player_o": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "playerSymbol": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "playerSymbol"
+      ]
+    },
+    "lastMovedPlayer": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "playerSymbol": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "playerSymbol"
+      ]
+    }
+  },
+  "required": [
+    "gameBoard",
+    "fileName",
+    "player_x",
+    "player_o",
+    "lastMovedPlayer"
+  ]
+}
